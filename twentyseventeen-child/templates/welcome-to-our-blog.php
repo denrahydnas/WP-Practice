@@ -27,7 +27,7 @@ get_header();
 				) );
 				?>
 
-                <hr/>
+<hr/>
 
 				<?php
 				$query = new WP_Query( array(
@@ -49,10 +49,13 @@ get_header();
 						<?php wp_reset_postdata(); ?>
                     </ul>
 				<?php endif; ?>
-
+<hr/>
             
 		</main><!-- #main -->
 	</div><!-- #primary -->
+    
+  <?php get_sidebar("child"); ?>
+    
 </div><!-- .wrap -->
 
 <?php get_footer(); ?>
