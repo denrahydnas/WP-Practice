@@ -12,3 +12,6 @@
 
 /*@import "../twentyseventeen/style.css"; - works but isn't best option b/c file orgs are different */
 
+.evergreen-content li a {
+    color: green;
+}

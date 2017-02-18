@@ -7,5 +7,10 @@ function tsc_wp_enqueue_scripts(){
     wp_enqueue_style('twentyseventeen-child-style', get_stylesheet_directory_uri() . '/style.css'); 
 }
 
+add_action('after_setup_theme', 'tsc_after_setup_theme');
+
+function tsc_after_setup_theme(){
+    register_nav_menu('evergreen-content', __('Evergreen Menu', 'twentyseventeen-child'));
+}
 
 ?>
